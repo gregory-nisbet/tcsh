@@ -25,3 +25,4 @@ m4_include([variables.at])
 
 m4_include([noexec.at])
 m4_include([sh.dol.at])
+m4_include([repeateval.at])
