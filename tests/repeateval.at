@@ -1,56 +1,76 @@
+
+AT_SETUP([repeat eval colon])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval ':'; echo a"], ,[a
+])
+AT_CLEANUP
+
 AT_SETUP([repeat eval for])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'for'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'for'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval foreach])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'foreach'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'foreach'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval if])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'if'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'if'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval while])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'while'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'while'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval endif])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'endif'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'endif'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval end])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'end'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'end'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval switch])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'switch'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'switch'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval case])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'case'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'case'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval break])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'break'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'break'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval endsw])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'endsw'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'endsw'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval do])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'do'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'do'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval done])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval 'done'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval 'done'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval open-paren])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval '[(]'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval '[(]'; echo a"], ,[a
+])
 AT_CLEANUP
 
 AT_SETUP([repeat eval close-paren])
-AT_CHECK([tcsh -f -i -c "repeat 99 eval '[)]'"])
+AT_CHECK([tcsh -f -i -c "repeat 99 eval '[)]'; echo a"], ,[a
+])
 AT_CLEANUP
 
